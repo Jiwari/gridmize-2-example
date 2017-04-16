@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.List;
 
 /**
- * Created by wermuth on 4/15/17.
+ * Created by Eduardo Wermuth on 4/15/17.
  */
 public class WikiTest {
 
@@ -19,11 +19,12 @@ public class WikiTest {
             GridDriver.set(new ChromeDriver());
             GridDriver.get().navigate().to("https://en.wikipedia.org/wiki/Comparison_of_GUI_testing_tools");
 
-            // You need an enum like the one in this example GuiTestingToolsHeader.
-            // You can use the GridBuilder to create your instance of Grid, or you can initialize your new grid
-            // directly using the Grid constructors.
-            // If your page only has one <table> on it, no additional selectors will be needed. Else, you will have
-            // to create set a specific selector for it. The same applies for tbody, thead, stc.
+            /* You need an enum like the one in this example GuiTestingToolsHeader.
+            * You can use the GridBuilder to create your instance of Grid, or you can initialize your new grid
+            * directly using the Grid constructors.
+            * If your page only has one <table> on it, no additional selectors will be needed. Else, you will have
+            * to create set a specific selector for it. The same applies for tbody, thead, stc.
+            */
             Grid<GuiTestingToolsHeader> wikiGrid = new GridBuilder(GuiTestingToolsHeader.class)
                     .withTableSelector(By.className("wikitable"))
                     .build();
