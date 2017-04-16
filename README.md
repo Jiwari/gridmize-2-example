@@ -1,2 +1,2 @@
-# gridmize-2-example
-Example using gridmize
+# Gridmize 2 Example
+Example using [Gridmize 2](https://github.com/Jiwari/gridmize-2).
